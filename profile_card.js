@@ -9,7 +9,10 @@ const occupation = document.getElementById("occupation");
 const bio = document.getElementById("bio");
 
 createProfile.onclick = function(){
-let getImg = URL.createObjectURL(img.files[0]);
+let getImg =""
+    if(img.files.length){
+        getImg =  URL.createObjectURL(img.files[0]);
+    }
 let getName = name.value
 let getEmail = email.value
 let getPhone = phone.value
