@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card Generator</title>
+    <link rel="stylesheet" href="profile_card.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="form-section">
+        <h2>Create Profile</h2>
+        <p>Create a polished, shareable profile card in seconds.
+            Fill in your details and watch your card come to life.</p>
+        <label for="name" style="font-size: 14px;">Full Name</label>
+        <input type="text" id="name" placeholder="Full Name">
+
+        <label for="email" style="font-size: 14px;">Email</label>
+        <input type="email" id="email" placeholder="Email">
+
+        <label for="phone" style="font-size: 14px;">Phone Number</label>
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <label for="occupation" style="font-size: 14px;">Occupation</label>
+        <input type="text" id="occupation" placeholder="Occupation">
+
+        <label for="bio" style="font-size: 14px;">Bio</label>
+        <textarea maxlength="200" id="bio" placeholder="Write something about yourself"></textarea>
+        <input id="img" type="file">
+        <button id="createProfile">Create Profile</button>
+    </div>
+
+    <div class="cards" id="cards">
+    </div>
+
+</div>
+
+<script src="profile_card.js"></script>
+
+</body>
+</html>
