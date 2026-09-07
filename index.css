@@ -16,6 +16,7 @@ body{
     gap:40px;
 }
 .form-section{
+    background-color:white;
     width:350px;
     padding: 25px;
     border-radius:12px;
@@ -72,43 +73,53 @@ button:hover{
 }
 .profile-info h2{
     text-align: left;
-    margin-bottom: 5px;
-    font-size: 26px;
-    color: #1f2937
+    margin-bottom: 6px;
+    font-size: 27px;
+    color: #1f2937;
+    font-weight:600;
 }
 .profile-info h5{
     text-align: left;
     color:#4f46e5;
     font-size: 14px;
     margin-bottom: 18px;
+    margin: bottom 20px;
+    font-weight:600
 }
 .profile-card{
-    padding: 30px;
+    position: relative;;
+    padding: 35px;
     width:600px;
-    min-height:300px;
+    min-height:320px;
     display:flex;
     align-items:center;
-    gap:30px;
+    gap:35px;
+    background-color:white;
     border:1px solid #e5e7eb;
     border-radius:20px;
     box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.08);
+    overflow:hidden;
 }
 .profile-info{
     flex: 1;
     min-width: 0;
 }
 .profile-card img{
-    width: 150px;
-    height: 150px;
+    width: 145px;
+    height: 145px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid #eef2ff;
+    display:block;
+}
+.profile-image{
+    flex-shrink:0;
 }
 .profile-info hr {
-  width: 90%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 18px 0;
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #e5e7eb;
 }
 span{
     color:#d62626;
@@ -116,6 +127,48 @@ span{
     margin-top:-10px;
     margin-bottom:10px;
     display:block;
+}
+.print-btn{
+    width:auto;
+    padding: 9px 15px;
+    margin-top:20px;
+    font-size:13px;
+    font-weight:600;
+    background:#4f46e5;
+    color:white;
+    border:none;
+    border-radius:7px;
+    cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    border-radius:6px;
+}
+.print-btn:hover{
+    background: #3730a3;
+}
+.print-btn .material-symbols-outlined{
+    font-size:17px;
+}
+@media print{
+    body {
+        background-color:white;
+    }
+    .form-section,
+    .print-btn{
+        display:none;
+    }
+    .container{
+        display:block;
+    }
+    .cards{
+        display:block;
+    }
+    .profile-card{
+        width:500px;
+        margin: 0 auto;
+        box-shadow:none;
+    }
 }
 
 

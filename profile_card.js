@@ -83,7 +83,6 @@ if(!valid){
     <p>About me:</p>
     <p><strong>${getBio}</strong></p>
     <button class="print-btn" onclick="window.print()">Print Profile Card</button>
-</span>
     </div>
 `;cards.innerHTML = "";
 cards.appendChild(newCard);
