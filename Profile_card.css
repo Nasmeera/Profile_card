@@ -39,12 +39,6 @@ textarea{
     border:1px solid #ccc;
     border-radius:6px;
 }
-input:focus,
-textarea:focus{
-    outline: none;
-    border-color: #605bbe;
-    box-shadow: 0 0 0  2px rgba(79, 70, 229, 0.2);
-}
 
 textarea{
     resize:none;
@@ -66,43 +60,37 @@ button:hover{
 }
 .profile-info p{
     margin: 8px 0px;
-    line-height: 1.5;
-    color: #4b5563;
+    line-height: 1.4;
     overflow-wrap: break-word;
 }
 .profile-info h2{
-    text-align: left;
-    margin-bottom: 5px;
-    font-size: 26px;
-    color: #1f2937
+    text-align: center;
+    margin-bottom: 10px;
 }
 .profile-info h5{
-    text-align: left;
-    color:#4f46e5;
-    font-size: 14px;
-    margin-bottom: 18px;
+    text-align: center;
+    color: rgb(205, 69, 92);
+    margin-bottom: 20px;
 }
 .profile-card{
-    padding: 30px;
-    width:600px;
-    min-height:300px;
+    padding: 20px;
+    width:560px;
+    min-height:250px;
     display:flex;
     align-items:center;
-    gap:30px;
-    border:1px solid #e5e7eb;
-    border-radius:20px;
-    box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.08);
+    gap:25px;
+    border:3px solid #ddd;
+    border-radius:10px;
 }
 .profile-info{
     flex: 1;
     min-width: 0;
 }
 .profile-card img{
-    width: 150px;
+    width: 120px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #eef2ff;
+    border-radius: 8px;
 }
 .profile-info hr {
   width: 90%;
@@ -111,11 +99,9 @@ button:hover{
   border-top: 1px solid #ccc;
 }
 span{
-    color:#d62626;
+    color:red;
     font-size:12px;
     margin-top:-10px;
     margin-bottom:10px;
     display:block;
 }
-
-
