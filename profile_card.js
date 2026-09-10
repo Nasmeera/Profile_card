@@ -13,6 +13,10 @@ const emailError = document.getElementById("emailError");
 const phoneError = document.getElementById("phoneError");
 
 createProfile.onclick = function(){
+    nameError.textContent = "";
+    emailError.textContent = "";
+    phoneError.textContent = "";
+    
     const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^[0-9+\-\s()]{7,15}$/;
@@ -55,7 +59,8 @@ if(getOccupation ===""){
     valid = false;
 }
 if(getBio ===""){
-    bio.textContent = "No bio provided...";
+    bioError.textContent = "Bio is required";
+    valid = false;
 }
 
 
