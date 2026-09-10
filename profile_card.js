@@ -16,7 +16,7 @@ createProfile.onclick = function(){
     nameError.textContent = "";
     emailError.textContent = "";
     phoneError.textContent = "";
-    
+
     const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^[0-9+\-\s()]{7,15}$/;
@@ -58,10 +58,7 @@ if(getOccupation ===""){
     occupationError.textContent = "Occupation is required";
     valid = false;
 }
-if(getBio ===""){
-    bioError.textContent = "Bio is required";
-    valid = false;
-}
+let bioText = getBio ==="" ? "No bio provided" : getBio;
 
 
 
@@ -86,7 +83,7 @@ if(!valid){
     <p>📱${getPhone}</p>
     <hr>
     <p>About me:</p>
-    <p><strong>${getBio}</strong></p>
+    <p><strong>${bioText}</strong></p>
     <button class="print-btn" onclick="window.print()">Print Profile Card</button>
     </div>
 `;cards.innerHTML = "";
